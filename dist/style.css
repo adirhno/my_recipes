@@ -1,0 +1,63 @@
+/** @format */
+
+body {
+  height: 100vh;
+  background-color: rgb(209, 200, 187) !important;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+#meals {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.ingredients {
+  margin-top: 20px;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.ingredient {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.meal {
+  background-color: rgb(233, 195, 98);
+  height: 93%;
+  max-height: 300px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px;
+  padding: 6px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.img {
+  display: grid;
+  justify-content: center;
+  margin-top: 29px;
+}
+
+.button {
+  border-radius: 3px;
+}
+
+#search-container {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
