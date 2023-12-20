@@ -3,18 +3,11 @@
 class ApiManager {
   constructor() {}
 
-  getMeals(ingredient) {
-    return $.get(`/recipes/${ingredient}`);
+  getMeals(ingredient, sensetiviteIngredient) {
+    return $.get(`/recipes/${ingredient}/${sensetiviteIngredient}`);
   }
 
-  getMealsFreeGluten(ingredient) {
-    return $.get(`/recipes/gluten/${ingredient}`);
-  }
-
-  getMealsFreeDairy(ingredient) {
-    return $.get(`/recipes/dairy/${ingredient}`);
-  }
-  getSensitivityMeals(ingredient,sensitivity){
-    return $.get(`/recipes/${ingredient}/${sensitivity}`);
+  getSensitiveIngredientMeals(ingredient, sensitivity) {
+    return $.get(`/recipes/specific/${ingredient}/${sensitivity}`);
   }
 }
