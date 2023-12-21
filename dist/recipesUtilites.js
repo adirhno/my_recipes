@@ -1,6 +1,7 @@
 /** @format */
 
 const { sensitivesArr } = require("../config");
+const faker = require("faker");
 
 class RecipesUltities {
   static filterData = function (results) {
@@ -8,6 +9,8 @@ class RecipesUltities {
     results.forEach((m) => {
       let meal = {
         id: m.idMeal,
+        starts: Math.floor(Math.random() * 6),
+        chef: faker.name.findName(),
         ingredients: m.ingredients,
         title: m.title,
         thumbnail: m.thumbnail,

@@ -25,6 +25,7 @@ body {
 .ingredient {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
 }
 
 .meal {
@@ -46,7 +47,7 @@ img {
 .img {
   display: grid;
   justify-content: center;
-  margin-top: 29px;
+  margin-top: 23px;
 }
 
 .button {
@@ -60,4 +61,14 @@ img {
 
 h1 {
   text-align: center;
+}
+
+.chef {
+  font-size: 10px;
+}
+
+.stars {
+  margin-left: 50%;
+  font-size: 15px;
+
 }

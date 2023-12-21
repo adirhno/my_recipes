@@ -5,7 +5,7 @@ class Render {
   appendMeals = function (meals) {
     $("#meals").html("");
     for (let i = 0; i < meals.length; i++) {
-      let meal = `<div class="col-sm-11 meal" ><a class="title">${meals[i].title}</a><div class="img"><img src="${meals[i].thumbnail}"></div>
+      let meal = `<div class="col-sm-11 meal" ><a class="title">${meals[i].title}</a><div class='chef '><strong>Chef: </strong>${meals[i].chef}<span class="stars">Stars:${meals[i].starts}</span></div><div class="img"><img src="${meals[i].thumbnail}"></div>
             <div class="ingredients">Ingredients:<ul id="ing${i}" class="ingredient"></ul></div></div> `;
 
       $("#meals").append(meal);
